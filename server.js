@@ -5,6 +5,10 @@ const app = express()
 app.get('/', (req, res) => {
   res.send('Hello, world!')
 })
+app.get('/about', (req, res) => {
+    res.send('about page')
+  })
+  
 
 const PORT = process.env.PORT
 
